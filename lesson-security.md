@@ -1,14 +1,14 @@
 1. Установите Bitwarden плагин для браузера. Зарегестрируйтесь и сохраните несколько паролей.  
-![установил betwarden](images\1-betwarden.jpg)  
+![установил betwarden](images/1-betwarden.jpg)  
 2. Установите Google authenticator на мобильный телефон. Настройте вход в Bitwarden акаунт через Google authenticator OTP.  
-![OTP](images\2-betwarden-OTP.jpg)  
+![OTP](images/2-betwarden-OTP.jpg)  
 3. Установите apache2, сгенерируйте самоподписанный сертификат, настройте тестовый сайт для работы по HTTPS.  
 * Сгенерировал сертификат
 * настроил тестовый сайт и редирект с http на https  
 
-![selsigned cert](images\3-https_selsigned_cert.jpg)
+![selsigned cert](images/3-https_selsigned_cert.jpg)
 4. Проверьте на TLS уязвимости произвольный сайт в интернете (кроме сайтов МВД, ФСБ, МинОбр, НацБанк, РосКосмос, РосАтом, РосНАНО и любых госкомпаний, объектов КИИ, ВПК ... и тому подобное).  
-```buildoutcfg
+```
 ./testssl.sh -e --fast --parallel https://www.google.com/
 
 ###########################################################
@@ -339,4 +339,4 @@ Last login: Mon Dec 27 22:36:06 2021 from 192.168.88.99
 ant
 ```
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.  
-![tcpdump->wireshark](images\7-tcpdump.jpg)
+![tcpdump->wireshark](images/7-tcpdump.jpg)
