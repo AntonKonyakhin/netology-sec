@@ -340,4 +340,10 @@ Last login: Mon Dec 27 22:36:06 2021 from 192.168.88.99
 ant
 ```
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.  
+
+Для захвата пакетов выполнил следующую команду:
+```
+tcpdump -n -c 100 -w /home/anton/data.pcap
+```
+
 ![tcpdump->wireshark](images/7-tcpdump.jpg)
